@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ota Yhteyttä</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Lisäämme tyylit vain contactme.html -sivulle */
+        @media (min-width: 1025px) {
+            .content {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                /* Asetetaan elementit ylös */
+                flex-wrap: wrap;
+                /* Mahdollistetaan elementtien kääriytyminen riville */
+            }
+
+            */ .image-container {
+                width: 75%;
+                /* Täyttää leveän tilan */
+            }
+
+            .image-container img {
+                width: 100%;
+                /* Täyttää koko tilan */
+            }
+
+            #form {
+                float: left;
+                width: 25%;
+                height: 100%;
+            }
+
+            #name {
+                width: 100%;
+            }
+
+            #email {
+                width: 100%;
+            }
+
+            #message {
+                width: 100%;
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .content {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                /* Asetetaan elementit ylös */
+                flex-wrap: wrap;
+                /* Mahdollistetaan elementtien kääriytyminen riville */
+            }
+
+            */ .image-container {
+                width: 25%;
+                /* Täyttää leveän tilan */
+            }
+
+            .image-container img {
+                width: 50%;
+                /* Täyttää koko tilan */
+            }
+
+            #form {
+                float: left;
+                width: 45%;
+                height: 100%;
+            }
+
+            #name {
+                width: 100%;
+            }
+
+            #email {
+                width: 100%;
+            }
+
+            #message {
+                width: 100%;
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .content {
+                justify-content: center;
+                align-items: flex-start;
+                /* Asetetaan elementit ylös */
+                flex-wrap: wrap;
+                /* Mahdollistetaan elementtien kääriytyminen riville */
+            }
+
+            */ .image-container {
+                width: 15%;
+                /* Täyttää leveän tilan */
+            }
+
+            .image-container img {
+                width: 50%;
+                /* Täyttää koko tilan */
+            }
+
+            #form {
+                float: left;
+                width: 100%;
+                height: 100%;
+            }
+
+            #name {
+                width: 100%;
+            }
+
+            #email {
+                width: 100%;
+            }
+
+            #message {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <div><a href="index.html">Etusivu</a> <a href="aboutme.html">Minusta</a> <a href="cv.html">CV</a> <a
+                href="contact.html">Ota Yhteyttä</a></div>
+
+    </div>
+    <div class="header2">
+        <h2></h2>
+    </div>
+    <div class="content">
+
+        <div id="data">
+            <div class="image-container">
+                <img src="2.jpg" alt="Kuva">
+            </div>
+            <div id="form"">
+                <form action=" mailto:anniina.kettunen@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nimi:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Sähköposti:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Viesti:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Lähetä">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© Anniina Kettunen </p>
+    </div>
+</body>
+
+</html>

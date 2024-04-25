@@ -13,37 +13,27 @@
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
-                /* Asetetaan elementit ylös */
                 flex-wrap: wrap;
-                /* Mahdollistetaan elementtien kääriytyminen riville */
             }
 
-            */ .image-container {
+            .image-container {
                 width: 75%;
-                /* Täyttää leveän tilan */
             }
 
             .image-container img {
                 width: 100%;
-                /* Täyttää koko tilan */
             }
 
             #form {
-                float: left;
                 width: 25%;
-                height: 100%;
+                float: left;
             }
 
-            #name {
-                width: 100%;
-            }
-
-            #email {
+            #name, #email, #message {
                 width: 100%;
             }
 
             #message {
-                width: 100%;
                 height: 250px;
             }
         }
@@ -53,37 +43,27 @@
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
-                /* Asetetaan elementit ylös */
                 flex-wrap: wrap;
-                /* Mahdollistetaan elementtien kääriytyminen riville */
             }
 
-            */ .image-container {
+            .image-container {
                 width: 25%;
-                /* Täyttää leveän tilan */
             }
 
             .image-container img {
                 width: 50%;
-                /* Täyttää koko tilan */
             }
 
             #form {
-                float: left;
                 width: 45%;
-                height: 100%;
+                float: left;
             }
 
-            #name {
-                width: 100%;
-            }
-
-            #email {
+            #name, #email, #message {
                 width: 100%;
             }
 
             #message {
-                width: 100%;
                 height: 250px;
             }
         }
@@ -92,37 +72,27 @@
             .content {
                 justify-content: center;
                 align-items: flex-start;
-                /* Asetetaan elementit ylös */
                 flex-wrap: wrap;
-                /* Mahdollistetaan elementtien kääriytyminen riville */
             }
 
-            */ .image-container {
+            .image-container {
                 width: 15%;
-                /* Täyttää leveän tilan */
             }
 
             .image-container img {
                 width: 50%;
-                /* Täyttää koko tilan */
             }
 
             #form {
+                width: 100%;
                 float: left;
-                width: 100%;
-                height: 100%;
             }
 
-            #name {
-                width: 100%;
-            }
-
-            #email {
+            #name, #email, #message {
                 width: 100%;
             }
 
             #message {
-                width: 100%;
                 height: 250px;
             }
         }
@@ -130,37 +100,38 @@
 </head>
 
 <body>
-    <div class="header">
-
-        <div><a href="index.html">Etusivu</a> <a href="aboutme.html">Minusta</a> <a href="cv.html">CV</a> <a
-                href="contact.html">Ota Yhteyttä</a></div>
-
-    </div>
-    <div class="header2">
-        <h2></h2>
-    </div>
-    <div class="content">
-
-        <div id="data">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="aboutme.html">Minusta</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Ota Yhteyttä</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-content">
+        <div class="content">
             <div class="image-container">
                 <img src="./6.jpg" alt="Kuva">
             </div>
-            <div id="form"">
-                <form action=" mailto:anniina.kettunen@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Nimi:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Sähköposti:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Viesti:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
-                <input type="submit" value="Lähetä">
+            <div id="form">
+                <form action="mailto:anniina.kettunen@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Nimi:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Sähköposti:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Viesti:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    <input type="submit" value="Lähetä">
                 </form>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <p>© Anniina Kettunen </p>
-    </div>
+    </section>
+    <footer>
+        <p>© Anniina Kettunen</p>
+    </footer>
 </body>
 
 </html>
+

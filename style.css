@@ -48,7 +48,7 @@ body {
     color: #F4E285;
 }
 
-.header2 {
+header {
     padding: 5px 150px;
     text-align: center;
     background-color: #F4A259;
@@ -97,7 +97,7 @@ body {
 
 
 
-.footer {
+footer {
     background-color: #5B8E7D;
     width: calc(100% - 40px);
     padding: 20px;
@@ -109,7 +109,7 @@ body {
 
 }
 
-.footer p {
+footer p {
     text-align: center;
     font-family: Segoe UI Symbol;
     font-size: 11px;

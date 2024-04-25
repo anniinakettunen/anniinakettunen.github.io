@@ -150,9 +150,12 @@ a:hover {
     }
 
     .header div a {
-        padding: 25px 0;
-        font-size: 35px;
+        float: left;
+        display: block;
+        color: #f2f2f2;
         text-align: center;
+        padding: 12px 14px;
+        text-decoration: none;
     }
 
     .header div {

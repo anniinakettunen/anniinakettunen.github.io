@@ -132,6 +132,7 @@ a:hover {
     .content {
         width: auto;
         text-align: left;
+        font-family: Ink Free;
     }
 
     .content img {
@@ -170,6 +171,7 @@ a:hover {
     .content {
         width: auto;
         text-align: left;
+        font-family: Ink Free;
     }
 
     .content img {
@@ -204,6 +206,7 @@ a:hover {
 @media only screen and (min-width: 650px) and (max-width: 1025px) {
     .content {
         width: auto;
+        font-family: Ink Free;
     }
 
     .content img {
@@ -235,6 +238,7 @@ a:hover {
     .content {
         width: auto;
         font-size: 20px;
+        font-family: Ink Free;
     }
 
     .content img {

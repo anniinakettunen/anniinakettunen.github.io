@@ -1,271 +1,107 @@
-/*div{
-    border: 1px;
-    border-color: black;
-    border-style: solid;
-    padding: 3px;
-    margin: 3px;
-    
-}*/
-
+/* Poistetaan yleiset marginaalit ja täytöt */
 html,
 body {
     margin: 0;
     padding: 0;
 }
 
+/* Tyyli header-elementille */
 .header {
     background-color: #5B8E7D;
-    width: 100%;
-    margin: 0 auto;
-    /* Keskitä header */
+    text-align: center;
     padding: 20px;
-    box-sizing: border-box;
 }
 
-.header {
-    font-size: 30px;
-    text-align: center;
-    color: black;
-    padding: 25px 0px;
-    font-family: Georgia;
-    margin: 0;
-}
-
-.header div {
-    overflow: hidden;
-}
-
-.header div a {
-    float: left;
-    display: block;
+/* Linkkien tyyli headerissa */
+.header a {
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 14px 16px;
 }
 
-.header div a:hover {
+.header a:hover {
     color: #F4E285;
 }
 
+/* Tyyli header2-elementille */
 .header2 {
-    padding: 5px 150px;
-    text-align: center;
     background-color: #F4A259;
-    font-family: Felix Titling;
-    margin: 0 auto;
-    /* Keskitä header2 */
-    max-width: auto;
+    text-align: center;
+    padding: 5px 150px;
 }
 
+/* Tyyli content-elementille */
 .content {
-    width: 100%;
-    /* Vähennä padding molemmilta puolilta */
     margin: 0 auto;
     padding: 20px;
     font-size: 17px;
-    font-family: Ink Free;
     background-color: #F4E285;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin-bottom: 0;
-    /* Lisää alapuolen margin nollaksi */
     text-align: center;
-    /* Tekstin keskitys */
-    z-index: 2;
+    overflow: hidden;
 }
 
+/* Kuvalle tyyli */
 .content img {
     max-width: 100%;
     height: auto;
-    float: left;
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
-.content .text {
-    width: calc(50% - 20px);
-}
-
-#container-div img {
-    width: 40%;
-    height: auto;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-
-
+/* Footerin tyyli */
 .footer {
     background-color: #5B8E7D;
-    width: calc(100% - 40px);
     padding: 20px;
     margin: 0 auto;
-    clear: both;
-    /* Poistaa floatien vaikutuksen */
-    position: static;
-    /* Muutetaan position staticiksi */
-
+    text-align: center;
 }
 
 .footer p {
-    text-align: center;
-    font-family: Segoe UI Symbol;
-    font-size: 11px;
-    margin: 0px;
+    margin: 0;
+    color: white;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: #F4A259;
-    /* Vaihtaa linkin värin, kun hiiri on linkin päällä */
-}
-
-
-
-@media only screen and (min-width: 480px) and (max-width: 650px) {
-    .content {
-        width: auto;
-        text-align: left;
-        font-family: Georgia;
-    }
-
-    .content img {
-        max-width: 50%;
-        width: auto;
-        height: auto !important;
-        float: center;
-        margin: 0 auto;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-
-    .header {
-        width: 100%;
-    }
-
-    .header div a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
+/* Media queryt */
+@media only screen and (max-width: 650px) {
+    .header a {
         padding: 12px 14px;
-        text-decoration: none;
-    }
-
-    .header div {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .header div a {
-        width: 100%;
-        float: none;
-    }
-
-}
-
-@media only screen and (min-width: 100px) and (max-width: 480px) {
-    .content {
-        width: auto;
-        text-align: left;
-        font-family: Georgia;
-    }
-
-    .content img {
-        width: 100% ! important;
-        height: auto !important;
-        margin: 0 auto;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-
-    .header {
-        width: 100%;
-    }
-
-    .header div a {
-        padding: 25px 0;
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .header div {
-        overflow: hidden;
-    }
-
-    .header div a {
-        width: 100%;
-        float: none;
-    }
-
-}
-
-@media only screen and (min-width: 650px) and (max-width: 1025px) {
-    .content {
-        width: auto;
-        font-family: Ink Free;
-    }
-
-    .content img {
-        max-width: 50%;
-        width: 50%;
-        height: auto;
-        float: left;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-
-    .content p {
-        float: center;
-    }
-
-    .header {
-        width: 100%;
-    }
-
-    .header {
-        padding: 25px 150px 25px 15px;
-        font-size: 25px;
-    }
-
-
-}
-
-@media only screen and (min-width: 1025px) {
-    .content {
-        width: auto;
-        font-size: 20px;
-        font-family: Ink Free;
-    }
-
-    .content img {
-        max-width: 30%;
-        width: 30%;
-        height: auto !important;
-        float: left;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-
-    .header {
-        font-size: 35px;
-        padding: 50px 200px;
     }
 
     .header2 {
-        padding: 10px 200px;
+        padding: 5px 50px;
     }
 
-    #etusivu-text {
-        margin-left: 40%;
-        margin-right: 30%;
+    .content {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .header a {
+        padding: 12px 14px;
     }
 
+    .header2 {
+        padding: 5px 100px;
+    }
 
+    .content img {
+        max-width: 50%;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .header a {
+        padding: 12px 20px;
+    }
+
+    .header2 {
+        padding: 5px 200px;
+    }
+
+    .content img {
+        max-width: 40%;
+        margin-right: 20px;
+    }
 }

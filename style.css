@@ -70,7 +70,7 @@ header {
     overflow: hidden;
     margin-bottom: 0;
     /* Lisää alapuolen margin nollaksi */
-    text-align: center;
+    text-align: left;
     /* Tekstin keskitys */
     z-index: 2;
 }
@@ -93,6 +93,12 @@ header {
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+#etusivu-text {
+    text-align: left; /* Asettaa tekstin vasemmalle */
+    text-indent: 0; /* Nollaa tekstinsisennyksen */
+    margin-left: 0; /* Nollaa vasemman marginaalin */
 }
 
 

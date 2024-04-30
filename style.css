@@ -156,6 +156,7 @@ a:hover {
     }
 
     .header div a {
+        float: left;
         display: block;
         color: #f2f2f2;
         text-align: center;
@@ -190,26 +191,20 @@ a:hover {
         margin-bottom: 20px;
     }
 
-    .header {
-        width: 100%;
-    }
-
     .header div a {
+        display: block; /* Asettaa navigointielementit lohko-elementeiksi */
         padding: 25px 0;
         font-size: 35px;
         text-align: center;
+        color: #f2f2f2;
+        text-decoration: none;
     }
 
     .header div {
         overflow: hidden;
     }
-
-    .header div a {
-        width: 100%;
-        float: none;
-    }
-
 }
+
 
 @media only screen and (min-width: 650px) and (max-width: 1025px) {
     .content {
